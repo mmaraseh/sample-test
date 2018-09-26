@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "386b19fe-5b97-4774-86cf-31d985344d03",
+		"name": "Testcode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "filter",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":[\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"aqsdasd\",\r\n            \"shortId\": \"6Laj49N3PiwZ\",\r\n            \"status\": 0,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"Level 6\",\r\n                \"postcode\": \"2060\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"146 Arthur Street\",\r\n                \"suburb\": \"North Sydney\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"E9eQVYEMkub2\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"valfirm\": null,\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"25\",\r\n                \"postcode\": \"4000\",\r\n                \"state\": \"QLD\",\r\n                \"street\": \"Mary St\",\r\n                \"suburb\": \"Brisbane\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"nQMyWWLBvu4A\",\r\n            \"status\": 1,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"92\",\r\n                \"postcode\": \"2000\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Pitt Street\",\r\n                \"suburb\": \"Sydney\",\r\n                \"unitNumber\": \"Suite 1 Level 8\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"ZM73nE4nKH56\",\r\n            \"status\": 4,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"cancelled\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasdas\",\r\n            \"shortId\": \"AQzAB5xMXFNx\",\r\n            \"status\": 3,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"360\",\r\n                \"postcode\": \"3000\",\r\n                \"state\": \"VIC\",\r\n                \"street\": \"Elizabeth St\",\r\n                \"suburb\": \"Melbourne\",\r\n                \"unitNumber\": \"Level 28\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"yebZvgdA7FRk\",\r\n            \"status\": 1,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"153\",\r\n                \"postcode\": \"2229\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Denman Avenue\",\r\n                \"suburb\": \"CARINGBAH\",\r\n                \"unitNumber\": \"Suite 7\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"YP7NJVNpVCdr\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"cancelled\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "https://desolate-eyrie-64822.herokuapp.com/filterproperties",
+					"protocol": "https",
+					"host": [
+						"desolate-eyrie-64822",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"filterproperties"
+					]
+				},
+				"description": "filterwithparams"
+			},
+			"response": []
+		},
+		{
+			"name": "is alive",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://desolate-eyrie-64822.herokuapp.com/isalive/",
+					"protocol": "https",
+					"host": [
+						"desolate-eyrie-64822",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"isalive",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "isalive local ",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8585/isalive",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"isalive"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterwithparams",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":[\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"aqsdasd\",\r\n            \"shortId\": \"6Laj49N3PiwZ\",\r\n            \"status\": 0,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"Level 6\",\r\n                \"postcode\": \"2060\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"146 Arthur Street\",\r\n                \"suburb\": \"North Sydney\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"E9eQVYEMkub2\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"valfirm\": null,\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"25\",\r\n                \"postcode\": \"4000\",\r\n                \"state\": \"QLD\",\r\n                \"street\": \"Mary St\",\r\n                \"suburb\": \"Brisbane\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"nQMyWWLBvu4A\",\r\n            \"status\": 1,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"92\",\r\n                \"postcode\": \"2000\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Pitt Street\",\r\n                \"suburb\": \"Sydney\",\r\n                \"unitNumber\": \"Suite 1 Level 8\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"ZM73nE4nKH56\",\r\n            \"status\": 4,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"cancelled\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasdas\",\r\n            \"shortId\": \"AQzAB5xMXFNx\",\r\n            \"status\": 3,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"360\",\r\n                \"postcode\": \"3000\",\r\n                \"state\": \"VIC\",\r\n                \"street\": \"Elizabeth St\",\r\n                \"suburb\": \"Melbourne\",\r\n                \"unitNumber\": \"Level 28\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"yebZvgdA7FRk\",\r\n            \"status\": 1,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"153\",\r\n                \"postcode\": \"2229\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Denman Avenue\",\r\n                \"suburb\": \"CARINGBAH\",\r\n                \"unitNumber\": \"Suite 7\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"YP7NJVNpVCdr\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"cancelled\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "https://desolate-eyrie-64822.herokuapp.com/filterproperties/htv/completed",
+					"protocol": "https",
+					"host": [
+						"desolate-eyrie-64822",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"filterproperties",
+						"htv",
+						"completed"
+					]
+				},
+				"description": "filterwithparams"
+			},
+			"response": []
+		},
+		{
+			"name": "filterproperties Local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":[\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"aqsdasd\",\r\n            \"shortId\": \"6Laj49N3PiwZ\",\r\n            \"status\": 0,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"Level 6\",\r\n                \"postcode\": \"2060\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"146 Arthur Street\",\r\n                \"suburb\": \"North Sydney\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"E9eQVYEMkub2\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"valfirm\": null,\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"25\",\r\n                \"postcode\": \"4000\",\r\n                \"state\": \"QLD\",\r\n                \"street\": \"Mary St\",\r\n                \"suburb\": \"Brisbane\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"nQMyWWLBvu4A\",\r\n            \"status\": 1,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"92\",\r\n                \"postcode\": \"2000\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Pitt Street\",\r\n                \"suburb\": \"Sydney\",\r\n                \"unitNumber\": \"Suite 1 Level 8\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"ZM73nE4nKH56\",\r\n            \"status\": 4,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"cancelled\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasdas\",\r\n            \"shortId\": \"AQzAB5xMXFNx\",\r\n            \"status\": 3,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"360\",\r\n                \"postcode\": \"3000\",\r\n                \"state\": \"VIC\",\r\n                \"street\": \"Elizabeth St\",\r\n                \"suburb\": \"Melbourne\",\r\n                \"unitNumber\": \"Level 28\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"yebZvgdA7FRk\",\r\n            \"status\": 1,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"153\",\r\n                \"postcode\": \"2229\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Denman Avenue\",\r\n                \"suburb\": \"CARINGBAH\",\r\n                \"unitNumber\": \"Suite 7\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"YP7NJVNpVCdr\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"cancelled\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8585/filterproperties",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"filterproperties"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterpropertieswithparams local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":[\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"aqsdasd\",\r\n            \"shortId\": \"6Laj49N3PiwZ\",\r\n            \"status\": 0,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"Level 6\",\r\n                \"postcode\": \"2060\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"146 Arthur Street\",\r\n                \"suburb\": \"North Sydney\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"E9eQVYEMkub2\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"valfirm\": null,\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"25\",\r\n                \"postcode\": \"4000\",\r\n                \"state\": \"QLD\",\r\n                \"street\": \"Mary St\",\r\n                \"suburb\": \"Brisbane\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"nQMyWWLBvu4A\",\r\n            \"status\": 1,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"92\",\r\n                \"postcode\": \"2000\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Pitt Street\",\r\n                \"suburb\": \"Sydney\",\r\n                \"unitNumber\": \"Suite 1 Level 8\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"ZM73nE4nKH56\",\r\n            \"status\": 4,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"cancelled\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasdas\",\r\n            \"shortId\": \"AQzAB5xMXFNx\",\r\n            \"status\": 3,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"360\",\r\n                \"postcode\": \"3000\",\r\n                \"state\": \"VIC\",\r\n                \"street\": \"Elizabeth St\",\r\n                \"suburb\": \"Melbourne\",\r\n                \"unitNumber\": \"Level 28\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"yebZvgdA7FRk\",\r\n            \"status\": 1,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"153\",\r\n                \"postcode\": \"2229\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Denman Avenue\",\r\n                \"suburb\": \"CARINGBAH\",\r\n                \"unitNumber\": \"Suite 7\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"YP7NJVNpVCdr\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"cancelled\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8585/filterproperties/avm/completed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"filterproperties",
+						"avm",
+						"completed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "filterpropertieswithparams with invalid json",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"payload\":[\r\n        {tsdas\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"aqsdasd\",\r\n            \"shortId\": \"6Laj49N3PiwZ\",\r\n            \"status\": 0,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"Level 6\",\r\n                \"postcode\": \"2060\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"146 Arthur Street\",\r\n                \"suburb\": \"North Sydney\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"E9eQVYEMkub2\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"valfirm\": null,\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"25\",\r\n                \"postcode\": \"4000\",\r\n                \"state\": \"QLD\",\r\n                \"street\": \"Mary St\",\r\n                \"suburb\": \"Brisbane\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"init\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"nQMyWWLBvu4A\",\r\n            \"status\": 1,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"pending\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"92\",\r\n                \"postcode\": \"2000\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Pitt Street\",\r\n                \"suburb\": \"Sydney\",\r\n                \"unitNumber\": \"Suite 1 Level 8\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasd\",\r\n            \"shortId\": \"ZM73nE4nKH56\",\r\n            \"status\": 4,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"cancelled\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"28\",\r\n                \"lat\": -33.912542000000002,\r\n                \"lon\": 151.00293199999999,\r\n                \"postcode\": \"2198\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Donington Ave\",\r\n                \"suburb\": \"Georges Hall\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdasdas\",\r\n            \"shortId\": \"AQzAB5xMXFNx\",\r\n            \"status\": 3,\r\n            \"type\": \"avm\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"360\",\r\n                \"postcode\": \"3000\",\r\n                \"state\": \"VIC\",\r\n                \"street\": \"Elizabeth St\",\r\n                \"suburb\": \"Melbourne\",\r\n                \"unitNumber\": \"Level 28\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"yebZvgdA7FRk\",\r\n            \"status\": 1,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"completed\"\r\n        },\r\n        {\r\n            \"address\": {\r\n                \"buildingNumber\": \"153\",\r\n                \"postcode\": \"2229\",\r\n                \"state\": \"NSW\",\r\n                \"street\": \"Denman Avenue\",\r\n                \"suburb\": \"CARINGBAH\",\r\n                \"unitNumber\": \"Suite 7\"\r\n            },\r\n            \"propertyTypeId\": 3,\r\n            \"readyState\": \"complete\",\r\n            \"reference\": \"asdas\",\r\n            \"shortId\": \"YP7NJVNpVCdr\",\r\n            \"status\": 4,\r\n            \"type\": \"htv\",\r\n            \"workflow\": \"cancelled\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8585/filterproperties/avm/completed",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8585",
+					"path": [
+						"filterproperties",
+						"avm",
+						"completed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
