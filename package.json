@@ -1,0 +1,13 @@
+{
+  "name": "test-code",
+  "description": "Moahamd Abu Maraseh Test Code",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}
